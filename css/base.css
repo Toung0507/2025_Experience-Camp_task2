@@ -27,9 +27,9 @@ body {
   background-color: #FBFBFB;
 }
 
-* {
+/* * {
   outline: 1px solid red;
-}
+} */
 
 .wrap {
   max-width: 1320px;
