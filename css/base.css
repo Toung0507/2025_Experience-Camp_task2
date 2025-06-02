@@ -24,6 +24,7 @@ body {
   color: #000000;
   overflow-wrap: break-word;
   /* 讓文字可以依照文字斷行，而非依照單字 */
+  background-color: #FBFBFB;
 }
 
 /* * {
@@ -39,12 +40,24 @@ body {
 .header {
   display: flex;
   gap: 40px;
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 1.5;
   margin: 0 auto;
   justify-content: center;
   padding: 24px 0px;
+}
+
+.header a {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 28px;
+  color: #000000;
+}
+
+.header a:hover {
+  color: var(--primary);
+}
+
+.footer {
+  border-top: 1px solid #6C757D;
 }
 
 .contact_me {
@@ -52,6 +65,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 82px 0px;
+
 }
 
 .contact_email {
@@ -68,7 +82,67 @@ body {
   font-weight: 500;
   text-align: center;
   padding: 24px 0px;
+  background-color: #FFFFFF;
 }
+
+.date {
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.tag {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  color: var(--primary);
+  font-weight: 500;
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.new_tag {
+  font-size: 16px;
+  font-weight: 700;
+  background-color: var(--primary);
+  color: #FFFFFF;
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: var(--radius);
+  margin-left: 8px;
+}
+
+
+.link_detail {
+  display: inline-block;
+  border-radius: var(--radius);
+  border: 1px solid #000000;
+  padding: 8px 16px;
+  color: #4B4B4B;
+  text-decoration: none;
+  align-self: self-start;
+  font-weight: 500;
+}
+
+
+.link_detail:hover {
+  background-color: var(--primary);
+  color: #FFFFFF;
+}
+
+.small_content {
+  font-weight: 500;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  /* 最多顯示兩行，但這個相容性是支援以 -webkit 開發的瀏覽器，通常不支援 IE 跟 FireFox */
+  -webkit-box-orient: vertical;
+  /* 搭配 display: -webkit-box; 使用 */
+  overflow: hidden;
+  /* 超出的範圍要隱藏 */
+  text-overflow: ellipsis;
+  /* 省略號的意思 */
+  margin-bottom: 16px;
+}
+
 
 @media (max-width:768px) {
   .contact_me {
