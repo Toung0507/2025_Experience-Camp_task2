@@ -9,7 +9,6 @@
   border-left: none;
 }
 
-
 .blog_detail_hero_bg {
   margin-left: 24px;
   display: flex;
@@ -121,25 +120,22 @@
   margin-left: 4px;
 }
 
-
-@media (max-width:992px) {
-  .hreo_bg {
-    margin-left: 8px;
-  }
-}
-
 @media (max-width:768px) {
-  .hero_myPhoto {
+
+  .blog_detail_hero_myPhoto {
     width: 100%;
   }
 
-  .hero {
+  .blog_detail_hero {
     flex-direction: column;
-
   }
 
-  .hreo_bg {
-    margin-left: 0;
+  .blog_detail_hero_bg {
+    margin-left: 0px;
     padding: 48px 12px;
+  }
+
+  .article_detail {
+    padding: 64px 12px;
   }
 }
