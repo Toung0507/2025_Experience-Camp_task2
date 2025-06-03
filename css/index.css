@@ -1,3 +1,94 @@
+.index_info {
+  position: relative;
+  max-width: 56%;
+  background-color: #FFFFFF;
+  margin-top: -202px;
+  margin-left: auto;
+  margin-right: 80px;
+  padding: 80px 40px;
+  z-index: 100;
+  font-weight: 500;
+  font-size: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+}
+
+.index_info_social {
+  display: flex;
+}
+
+
+
+
+.subscribe {
+  display: flex;
+}
+
+.subscribe_myPhoto {
+  width: 50vw;
+}
+
+.subscribe_bg {
+  width: 50vw;
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/index/Hero%20Section2.png?raw=true);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0px 80px;
+}
+
+.subscribe_detail {
+  background-color: #FFFFFF;
+  padding: 80px;
+}
+
+.subscribe_title {
+  font-weight: 700;
+  font-size: 64px;
+  margin-bottom: 16px;
+}
+
+.subscribe_content {
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 24px;
+}
+
+.subscribe_form {
+  display: flex;
+  flex-direction: column;
+}
+
+.subscribe_input {
+  outline: 0;
+  border: 0;
+  background-color: #F1F1F1;
+  font-weight: 500;
+  font-size: 20px;
+  padding: 8px 16px;
+  margin-bottom: 8px;
+}
+
+.subscribe_input::placeholder {
+  font-weight: 500;
+  font-size: 20px;
+  color: #4B4B4B;
+}
+
+.subscribe_submit {
+  margin-top: 16px;
+  align-self: flex-start;
+  padding: 8px 16px;
+  border-radius: var(--radius);
+  border: 1px solid var(--primary);
+  background-color: #FFFFFF;
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 16px;
+}
+
 .index_contact {
   padding: 80px 0px;
 }
@@ -14,6 +105,8 @@
   font-weight: 500;
   font-size: 28px;
   max-width: 100%;
+  border-bottom: 1px solid #000000;
+  padding-bottom: 16px;
 }
 
 .index_contact_list:not(:last-child) {
@@ -41,6 +134,48 @@
 
 .social_arrow {
   margin-left: auto;
+}
+
+@media (max-width:1400px) {
+  .subscribe_bg {
+    padding: 0px 60px;
+  }
+
+  .subscribe_detail {
+    padding: 40px;
+  }
+}
+
+@media (max-width:992px) {
+
+  .index_info {
+    max-width: 100%;
+    margin: 0;
+    padding: 40px 24px;
+
+  }
+
+  .subscribe {
+    flex-direction: column;
+  }
+
+  .subscribe_myPhoto,
+  .subscribe_bg {
+    width: 100%;
+  }
+
+  .subscribe_bg {
+    padding: 12px;
+  }
+
+  .subscribe_detail {
+    padding: 40px 24px;
+  }
+
+  .subscribe_title {
+    font-size: 48px;
+  }
+
 }
 
 @media (max-width:768px) {
