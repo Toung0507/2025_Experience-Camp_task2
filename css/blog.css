@@ -45,7 +45,7 @@
   border-left: none;
 }
 
-.blog_hreo_bg {
+.blog_hero_bg {
   max-width: 636px;
   margin-left: 24px;
   display: flex;
@@ -182,7 +182,7 @@
     font-size: 52px;
   }
 
-  .blog_hreo_bg {
+  .blog_hero_bg {
     margin: 0px;
     padding: 48px 12px;
   }
